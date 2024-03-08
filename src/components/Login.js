@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import LoginForm from "./LoginForm";
+import Form from "./Form";
 
 const Login = () => {
   return (
@@ -13,7 +13,7 @@ const Login = () => {
           className="brightness-50"
         />
       </div>
-      <LoginForm />
+      <Form />
     </div>
   );
 };
