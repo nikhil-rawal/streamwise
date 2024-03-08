@@ -5,7 +5,7 @@ const Header = () => {
     // <div className="p-4 absolute z-10 text-[#E50914] font-bold text-3xl text-center tracking-wider skew-x-2">
     //   STREAMWISE
     // </div>
-    <div className="logo-text absolute z-10 text-red-500 font-bold text-3xl text-center tracking-widest">
+    <div className="px-4 py-6 logo-text absolute z-10 text-[#E50914] font-bold text-4xl text-center tracking-wide font-g ">
       STREAMWISE
       <div className="logo-text::after inset-0 bg-gradient-to-br from-transparent to-black opacity-10"></div>
     </div>
