@@ -8,7 +8,8 @@ const Form = () => {
   };
 
   return (
-    <form className="text-white absolute px-8 py-4 bg-black w-4/12 left-1/2 -translate-x-1/2 translate-y-1/2 flex flex-col justify-center content-center items-center opacity-90">
+    <form className="text-white absolute px-8 py-4 bg-black w-[36%] mx-auto my-auto flex flex-col justify-center content-center items-center opacity-90 translate-x-96 translate-y-36">
+      {/* left-1/2 -translate-x-1/2 translate-y-1/2 */}
       <h1 className=" font-semibold  self-start p-2 m-2 text-3xl">
         {isSignInForm ? "Sign In" : "Sign Up"}
       </h1>
@@ -33,16 +34,31 @@ const Form = () => {
         {isSignInForm ? "Sign In" : "Sign Up"}
       </button>
       <br />
-      <p className={`font-light self-start`}>
-        New to Streamwise?{" "}
-        <span
-          className="underline font-bold cursor-pointer"
-          onClick={toggleSignInForm}
-        >
-          {isSignInForm ? "Sign In" : "Sign Up"}
-        </span>
-        .
-      </p>
+      {/* {isSignInForm ? "Sign Up" : "Sign In"} */}
+
+      {isSignInForm ? (
+        <p className={`font-light self-start`}>
+          New to Streamwise?{" "}
+          <span
+            className="underline font-bold cursor-pointer"
+            onClick={toggleSignInForm}
+          >
+            Sign Up
+          </span>
+          .
+        </p>
+      ) : (
+        <p className={`font-light self-start`}>
+          Already a user?{" "}
+          <span
+            className="underline font-bold cursor-pointer"
+            onClick={toggleSignInForm}
+          >
+            Sign In
+          </span>
+          .
+        </p>
+      )}
     </form>
   );
 };
